@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Route James Francis Hoadley Took</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8R3bzig1lSCrabw-2pqXTWT1hYIk7_XE"></script>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {lat: 37.0902, lng: -95.7129}
+        });
+        var flightPlanCoordinates = [
+          {lat: 43.57, lng: -72.403},
+          {lat: 43.55, lng: -73},
+          {lat: 43.545, lng: -74},
+          {lat: 43.55, lng: -75},
+          {lat: 43.555, lng: -76},
+          {lat: 43.10, lng: -77},
+          {lat: 43.10, lng: -78},
+          {lat: 43.10, lng: -78},
+          {lat: 42.50, lng: -79},
+          {lat: 41.75, lng: -81},
+          {lat: 41.30, lng: -82},
+          {lat: 41.30, lng: -87},
+          {lat: 41.75, lng: -89.5},
+          {lat: 41.76, lng: -90},
+          {lat: 40.78, lng: -91.4},
+          {lat: 39.82, lng: -91.6},
+          {lat: 38.95, lng: -91.1},
+          {lat: 39.00, lng: -91.2},
+          {lat: 39.10, lng: -91.4},
+          {lat: 39.25, lng: -91.6},
+          {lat: 39.35, lng: -91.8},
+          {lat: 39.40, lng: -92},
+          {lat: 39.45, lng: -93},
+          {lat: 39.50, lng: -94.4},
+          {lat: 39.55, lng: -95.8},
+          {lat: 39.60, lng: -96},
+          {lat: 39.00, lng: -97},
+          {lat: 39.05, lng: -98},
+          {lat: 40.00, lng: -99},
+          {lat: 40.20, lng: -100},
+          {lat: 40.60, lng: -101},
+          {lat: 41.05, lng: -102},
+          {lat: 41.40, lng: -103},
+          {lat: 41.75, lng: -104},
+          {lat: 42.20, lng: -105},
+          {lat: 42.30, lng: -106},
+          {lat: 42.40, lng: -107},
+          {lat: 42.50, lng: -108},
+          {lat: 42.40, lng: -109},
+          {lat: 42.35, lng: -110},
+          {lat: 42.30, lng: -111},
+          {lat: 42.35, lng: -112},
+          {lat: 42.25, lng: -113},
+          {lat: 42.00, lng: -114},
+          {lat: 41.40, lng: -115},
+          {lat: 40.75, lng: -116},
+          {lat: 40.65, lng: -117},
+          {lat: 40.95, lng: -118},
+          {lat: 40.65, lng: -119},
+          {lat: 40.65, lng: -120},
+          {lat: 40.65, lng: -121.45}
+        ];
+       
+        let marker1 = new google.maps.Marker({
+        position: { lat: 43.57, lng: -72.403 },
+        map: map,
+        title: 'Hartland, Windsor County, Vermont'
+        });
+        let infowindow1 = new google.maps.InfoWindow({
+          content: 'James Francis Hoadley, at age 19 in 1850 left his home located \
+          in Hartland, Windsor County, Vermont. His Father had passed away when James \
+          was twelve years of age. His Mother was sixty at the time of his departure.'
+        });
+        marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+
+        let marker2 = new google.maps.Marker({
+        position: { lat: 42.10, lng: -80.21 },
+        map: map,
+        title: 'Erie County, Pennsylvania'
+        });
+        let infowindow2 = new google.maps.InfoWindow({
+          content: 'The Hoadleys continued west to Louis\'s Town (later renamed Lewiston),\
+           where they located on Patented Land, at the base of two Peaks located at the \
+           lower end of the Trinity Alps. These Peaks are now officially named Hoadley \
+           Peaks, and although not high in elevation (4584 Feet) according to western \
+           standards, their height is taller than any of the mountains in Vermont, where \
+           James Francis Hoadley Started from.'
+        });
+        marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+
+        let marker3 = new google.maps.Marker({
+        position: { lat: 43.57, lng: -70.57 },
+        map: map,
+        title: 'Lewiston, California'
+        });
+        let infowindow3 = new google.maps.InfoWindow({
+          content: 'The Hoadleys continued west to Louis\'s Town (later renamed Lewiston),\
+           where they located on Patented Land, at the base of two Peaks located at the \
+           lower end of the Trinity Alps. These Peaks are now officially named Hoadley \
+           Peaks, and although not high in elevation (4584 Feet) according to western \
+           standards, their height is taller than any of the mountains in Vermont, where \
+           James Francis Hoadley Started from.'
+        });
+        marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+        
+        
+
+
+
+
+        var flightPath = new google.maps.Polyline({
+          path: flightPlanCoordinates,
+          geodesic: true,
+          strokeColor: '#FF0000',
+          strokeOpacity: 1.0,
+          strokeWeight: 2
+        });
+        flightPath.setMap(map);
+        marker1.addListener('click', function() {
+          var infowindow = new google.maps.InfoWindow({
+            content: 'Hartland, Windsor County, Vermont'
+          });
+          infowindow.open(map, marker1);
+        });
+        marker2.addListener('click', function() {
+          var infowindow = new google.maps.InfoWindow({
+            content: 'Lewiston, California'
+          });
+          infowindow.open(map, marker44);
+        });
+        marker.addListener('click', function() {
+          var infowindow = new google.maps.InfoWindow({
+            content: 'This is the United States'
+          });
+          infowindow.open(map, marker);
+        });
+      }
+    </script>
+  </head>
+  <body onload="initMap()">
+    <div id="map" style="height: 500px; width: 100%;"></div>
+  </body>
+</html>
+
+  
