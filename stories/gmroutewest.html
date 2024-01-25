@@ -66,8 +66,9 @@
         let marker1 = new google.maps.Marker({
         position: { lat: 43.57, lng: -72.403 },
         map: map,
-        title: 'Hartland, Windsor County, Vermont'
+        title: 'Hartland, Windsor County, VVermont'
         });
+
         let infowindow1 = new google.maps.InfoWindow({
           content: 'James Francis Hoadley, at age 19 in 1850 left his home located \
           in Hartland, Windsor County, Vermont. His Father had passed away when James \
@@ -124,24 +125,7 @@
           strokeWeight: 2
         });
         flightPath.setMap(map);
-        marker1.addListener('click', function() {
-          var infowindow = new google.maps.InfoWindow({
-            content: 'Hartland, Windsor County, Vermont'
-          });
-          infowindow.open(map, marker1);
-        });
-        marker2.addListener('click', function() {
-          var infowindow = new google.maps.InfoWindow({
-            content: 'Lewiston, California'
-          });
-          infowindow.open(map, marker44);
-        });
-        marker.addListener('click', function() {
-          var infowindow = new google.maps.InfoWindow({
-            content: 'This is the United States'
-          });
-          infowindow.open(map, marker);
-        });
+
       }
     </script>
   </head>
