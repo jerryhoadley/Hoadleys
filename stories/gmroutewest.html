@@ -26,14 +26,12 @@
           {lat: 41.76, lng: -90},
           {lat: 40.55, lng: -91.00},
           {lat: 39.82, lng: -91.6},
-          {lat: 38.60, lng: -90.2},
+          {lat: 38.38, lng: -90.12},
           {lat: 39.09, lng: -94.42},
           {lat: 41.25, lng: -95.88},
           {lat: 42.07, lng: -104.14},
           {lat: 42.85, lng: -106.43},
           {lat: 42.44, lng: -107.22},
-
-
           {lat: 42.65, lng: -108},
           {lat: 42.50, lng: -109},
           {lat: 42.35, lng: -110},
@@ -206,9 +204,20 @@
           through Curlew Valley and by Rock Springs then over Sublette Creek followed by crossing Raft River and then following \
           Cassia Creek to Elba. The Trail then continues south to the City of Rocks and Junction Valley and then continues on \
           through Granite Pass and follows Birch Creek to the junction of Goose Creek and leaves the Idaho-Utah border and heads \
-          through a very short piece of the Trail in the very top port- ion of the northwest corner of Utah before entering Nevada.\
-          \
-          The City of Rocks is considered a sort of geographical hub for the California Trail. The Trail follows Goose Creek \
+          through a very short piece of the Trail in the very top port- ion of the northwest corner of Utah before entering Nevada.'
+        });
+        marker8.addListener('click', function() {
+          infowindow8.open(map, marker8);
+        });
+
+        let marker9 = new google.maps.Marker({
+        position: { lat: 41.03, lng: -115.60 },
+        map: map,
+        title: 'Deeth, Nevada'
+        });
+
+        let infowindow9 = new google.maps.InfoWindow({
+          content: 'The City of Rocks is considered a sort of geographical hub for the California Trail. The Trail follows Goose Creek \
           into Nevada and intersects and crosses Little Goose Creek then follows Rock Springs and Emigrant Springs located near \
           the banks of Rock Springs Creek, which the Trail follows southwest until it meets up with 1000 Springs Creek, which it \
           now follows south. Bearing east while traveling south the Trail divides, some taking Town Creek to Wells, and others \
@@ -232,69 +241,31 @@
            through the Kamma Mountains, both meeting at a junc- tion called Rabbit Hole Springs where Noble\'s Route left the \
            Apple- gate-Lassen Route, and went on its own, having been established in 1851- two years prior to the Hoadleys coming \
            west, and in 1852 the first Emigrants started using this new route, which ran from the Applegate-Lassen Trail at the \
-           Great Boiling Springs at Black Rock Point to Shasta City, California, by way of the Smoke Creek Desert and Lassen Peak.' 
-        });
-        marker8.addListener('click', function() {
-          infowindow8.open(map, marker8);
-        });
-
-        let marker9 = new google.maps.Marker({
-        position: { lat: 43.57, lng: -72.403 },
-        map: map,
-        title: 'Hartland, Windsor County, VVermont'
-        });
-
-        let infowindow9 = new google.maps.InfoWindow({
-          content: 'James Francis Hoadley, at age 19 in 1850 left his home located \
-          in Hartland, Windsor County, Vermont. His Father had passed away when James \
-          was twelve years of age. His Mother was sixty at the time of his departure.'
+           Great Boiling Springs at Black Rock Point to Shasta City, California, by way of the Smoke Creek Desert and Lassen Peak.'
         });
         marker9.addListener('click', function() {
           infowindow9.open(map, marker9);
         });
 
         let marker10= new google.maps.Marker({
-        position: { lat: 43.57, lng: -72.403 },
+        position: { lat: 38.38, lng: -90.12 },
         map: map,
-        title: 'Hartland, Windsor County, VVermont'
+        title: 'St. Louis, MO'
         });
 
         let infowindow10 = new google.maps.InfoWindow({
-          content: 'James Francis Hoadley, at age 19 in 1850 left his home located \
-          in Hartland, Windsor County, Vermont. His Father had passed away when James \
-          was twelve years of age. His Mother was sixty at the time of his departure.'
+          content: 'We may assume that the Hoadleys left James\' brother Dr. George Clinton Hoadley at Whitewater, \
+          Wisconsin and headed for the beginning of the Mormon Trail. By traveling west from Whitewater they could \
+          have reached Rock River shortly thereafter, and followed it in its southwesterly direction through \
+          Illinois, to where it joins the Mississippi River at the State borders of Illinois and Iowa, and if going \
+          by water they could have continued down the Mississippi River to St.Louis, Missouri, where they could have \
+          transferred to a boat on the Missouri River, which would ply westward across the State of Missouri and then \
+          turn north at Kansas City, past St.Joseph to the starting off place for the Mormon Trail at Council Bluffs, \
+          Iowa, otherwise it would have been necessary to travel over 300 miles, as the crow flies, by wagon across the \
+          State of Iowa, a long and tedious task.'
         });
         marker10.addListener('click', function() {
           infowindow10.open(map, marker10);
-        });
-
-        let marker11 = new google.maps.Marker({
-        position: { lat: 43.57, lng: -72.403 },
-        map: map,
-        title: 'Hartland, Windsor County, VVermont'
-        });
-
-        let infowindow11 = new google.maps.InfoWindow({
-          content: 'James Francis Hoadley, at age 19 in 1850 left his home located \
-          in Hartland, Windsor County, Vermont. His Father had passed away when James \
-          was twelve years of age. His Mother was sixty at the time of his departure.'
-        });
-        marker11.addListener('click', function() {
-          infowindow11.open(map, marker11);
-        });
-
-        let marker12 = new google.maps.Marker({
-        position: { lat: 43.57, lng: -72.403 },
-        map: map,
-        title: 'Hartland, Windsor County, VVermont'
-        });
-        let infowindow12 = new google.maps.InfoWindow({
-          content: 'James Francis Hoadley, at age 19 in 1850 left his home located \
-          in Hartland, Windsor County, Vermont. His Father had passed away when James \
-          was twelve years of age. His Mother was sixty at the time of his departure.'
-        });
-        marker12.addListener('click', function() {
-          infowindow12.open(map, marker12);
         });
 
         let marker99 = new google.maps.Marker({
